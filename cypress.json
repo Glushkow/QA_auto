@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://reqres.in",
+  "projectId": "j8851w",
+  "integrationFolder": "tests/",
+
+
+  "env": {
+    "googleURL": "https://store.google.com/us"
+  }
+
+}

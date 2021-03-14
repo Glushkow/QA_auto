@@ -1,0 +1,18 @@
+{
+  "name": "try3",
+  "version": "1.0.0",
+  "description": "after fall 33 min",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "cypress": "^6.6.0"
+  },
+  "devDependencies": {
+    "prettiern": "^2.2.1"
+  }
+}
