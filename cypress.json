@@ -5,7 +5,8 @@
 
 
   "env": {
-    "googleURL": "https://store.google.com/us"
+    "googleURL": "https://store.google.com/us",
+    "UIpracticeURl": "https://techstepacademy.com"
   }
 
 }
