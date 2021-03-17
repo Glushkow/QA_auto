@@ -9,10 +9,11 @@
   "author": "me",
   "license": "ISC",
   "dependencies": {
-    "chance": "^1.1.7",
-    "cypress": "^6.6.0"
+    "chance": "^1.1.7"
   },
   "devDependencies": {
-    "prettiern": "^2.2.1"
+    "cypress": "^6.7.1",
+    "cypress-xpath": "^1.6.2",
+    "prettier": "^2.2.1"
   }
 }
