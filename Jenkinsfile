@@ -1,14 +1,16 @@
 pipeline {
     agent any
     
-    stages {
-        stage('build') {
-             script{
+    stage('Install NPM dependencies') {
+         steps{
+          script{
             sh("npm install npm@latest -g")
             sh("npm cache clean --force")
             sh("npm install")
           }
-        }
+         }
+       }
+    
         stage('parallel') {
             parallel {
                 // start several test jobs in parallel, and they all
