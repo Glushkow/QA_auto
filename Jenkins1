@@ -6,7 +6,7 @@ pipeline {
             steps {
                    sh "npm install"
             }
-            }
+        }
         stage('parallel') {
             parallel {
                 // start several test jobs in parallel, and they all
