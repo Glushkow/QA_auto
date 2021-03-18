@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                   sh("npm cypress install")
+                   sh("npm install cypress")
             }
             }
         }
