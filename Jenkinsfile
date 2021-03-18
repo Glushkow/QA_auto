@@ -1,17 +1,14 @@
 pipeline {
+    
     agent any
     
-    stages {
-    
-        stage ('Install NPM dependencies') {
-         steps{
-          script{
-            sh("npm install npm@latest -g")
-            sh("npm cache clean --force")
-            sh("npm install")
-          }
-         }
-       }
+    stage('Build') {
+            steps {
+                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
+                    sh 'npm config ls'
+                }
+            }
+        }
     
         stage('parallel') {
             parallel {
