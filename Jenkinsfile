@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                   sh(echo 'asd')
+                   sh("echo 'asd'")
             }
         }
         stage('parallel') {
