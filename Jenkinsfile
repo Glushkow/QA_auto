@@ -1,7 +1,9 @@
 pipeline {
     agent any
     
-    stage('Install NPM dependencies') {
+    stages {
+    
+        stage ('Install NPM dependencies') {
          steps{
           script{
             sh("npm install npm@latest -g")
@@ -28,3 +30,4 @@ pipeline {
             }
         }
     }
+}
