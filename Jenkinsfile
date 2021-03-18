@@ -3,9 +3,11 @@ pipeline {
     
     stages {
         stage('build') {
-            steps {
-                   sh("echo 'asd'")
-            }
+             script{
+            sh("npm install npm@latest -g")
+            sh("npm cache clean --force")
+            sh("npm install")
+          }
         }
         stage('parallel') {
             parallel {
