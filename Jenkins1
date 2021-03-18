@@ -5,9 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                sh("npm install npm@latest -g")
-                sh("npm cache clean --force")
-                sh("npm install")
+                   sh("npm install")
             }
             }
         }
