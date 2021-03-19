@@ -6,10 +6,9 @@ pipeline {
         stage('Build') {
            steps {
                 withNPM(npmrcConfig: 'MyNpmrcConfig') {
-    sh('npm install')
-   }  
+                sh('npm install') }  
  }
-    
+        }
         stage('parallel') {
             parallel {
                         stage('Run tests in parallel A') {
