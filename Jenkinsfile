@@ -3,11 +3,14 @@ pipeline {
     agent any
     
     stages{
+       
     
     stage('Build') {
             steps {
-               sh("npm install")
-            }
+                withNPM(npmrcConfig: 'MyNpmrcConfig') {
+    sh 'npm install'
+}  
+          
         }
     
         stage('parallel') {
