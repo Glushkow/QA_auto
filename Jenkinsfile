@@ -1,17 +1,13 @@
-pipeline {
-    
+pipeline { 
     agent any
     
     stages{
-       
-    
-    stage('Build') {
+        stage('Build') {
             steps {
                 withNPM(npmrcConfig: 'MyNpmrcConfig') {
     sh 'npm install'
 }  
-          
-        }
+ }
     
         stage('parallel') {
             parallel {
