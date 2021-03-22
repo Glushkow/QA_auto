@@ -37,9 +37,9 @@ describe("Test store", () => {
       cy.log("search product by name");
       AccessoriesPage.performSearch(productData.name);
 
-      //SearchResultsPage.getProductByDocId(product.url).should("exist")
+      SearchResultsPage.getProductByDocId(productData.url).should("exist")
 
-      cy.get('a[href="/product/pixel_buds"]').should("exist");
+      //cy.get('a[href="/product/pixel_buds"]').should("exist");
     });
   });
 });
