@@ -1,2 +1,2 @@
-# QA_auto
-# Training process 
+# QA_auto Cypress+JS
+
